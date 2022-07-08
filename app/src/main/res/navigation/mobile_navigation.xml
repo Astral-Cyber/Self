@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+            android:id="@+id/navigation_dashboard"
+            android:name="com.jxufe.self.ui.dashboard.DashboardFragment"
+            android:label="待办"
+            tools:layout="@layout/fragment_dashboard"/>
+    <fragment
+            android:id="@+id/navigation_home"
+            android:name="com.jxufe.self.ui.home.HomeFragment"
+            android:label="我的"
+            tools:layout="@layout/fragment_home"/>
+    <fragment
+            android:id="@+id/navigation_notifications"
+            android:name="com.jxufe.self.ui.notifications.NotificationsFragment"
+            android:label="专注统计"
+            tools:layout="@layout/fragment_notifications"/>
+    <fragment
+            android:id="@+id/navigation_company"
+            android:name="com.jxufe.self.ui.company.CompanyFragment"
+            android:label="学伴"
+            tools:layout="@layout/fragment_company"/>
+    <fragment
+            android:id="@+id/navigation_supervisor"
+            android:name="com.jxufe.self.ui.supervisor.SupervisorFragment"
+            android:label="自律监督师"
+            tools:layout="@layout/fragment_company"/>
+</navigation>

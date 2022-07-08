@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/task_layout"
+              >
+    <TableLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+        <TableRow android:paddingTop="40px">
+            <TextView
+                    android:text="Name"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/task_name"
+                    android:paddingLeft="60px"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    />
+            <Switch android:paddingRight="30px" android:layout_weight="1"
+            ></Switch>
+        </TableRow>
+        <TableRow android:paddingBottom="40px">
+            <TextView
+                    android:paddingLeft="60px"
+                    android:text="Time"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/task_time"
+                    android:layout_weight="1"
+            />
+            <TextView
+                    android:text="Tomato"
+                    android:gravity="right"
+                    android:paddingRight="60px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/task_long"
+                    android:layout_weight="3"
+            />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
